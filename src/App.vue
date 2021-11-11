@@ -28,17 +28,20 @@ export default {
 </script>
 
 <style lang="scss">
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
   @import "./assets/css_var/colors.scss";
 
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    font-family:'Roboto', sans-serif;
   }
 
   #app {
+    min-width: 1440px;
     height: 100vh;
-    background-color: cornflowerblue;
+    background-color: $sign_up_sectionColor;
   }
+
 </style>

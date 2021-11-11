@@ -160,7 +160,31 @@
                 <!-- //SITES -->
             </div>
         </section>
-        <section class="follow_us"></section>
+        <!-- //section links -->
+
+        <section class="follow_us">
+
+            <div class="container">
+
+                <div class="sign_up">
+                    <p>
+                        SIGN-UP NOW!
+                    </p>
+                </div>
+                <div class="follow">
+                    <P>
+                        FOLLOW US
+                    </P>
+                    <img src="../assets/img/footer-facebook.png" alt="#">
+                    <img src="../assets/img/footer-twitter.png" alt="#">
+                    <img src="../assets/img/footer-youtube.png" alt="#">
+                    <img src="../assets/img/footer-pinterest.png" alt="#">
+                    <img src="../assets/img/footer-periscope.png" alt="#">
+                </div>
+
+            </div>
+
+        </section>
     </footer>
 </template>
 
@@ -178,7 +202,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
-
         .foot_links {
             width: 80%;
             margin: auto;
@@ -209,6 +232,11 @@
                     a {
                         text-decoration: none;
                         color: $footer_font_color;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: white;
+                        }
                     }
                 }
 
@@ -218,5 +246,39 @@
 
             }
         }
+
+        .follow_us {
+            background-color: $sign_up_sectionColor;
+            padding: 2rem 0;
+            .container {
+                width: 80%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .follow {
+                    display: flex;
+                    align-items: center;
+                    color: $shop_nav_color;
+
+                    img {
+                        margin-left: 1rem;
+                    }
+                }
+
+                .sign_up {
+                    color: white;
+                    font-weight: bold;
+
+                    p {
+                        border: 2px solid $shop_nav_color;
+                        padding: 0.5rem;
+                        border-radius: 0.3rem;
+                    }
+                }
+            }
+        }
+
     }
 </style>
