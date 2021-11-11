@@ -6,7 +6,7 @@
     <site_main/>
     <!-- / site main -->
 
-   <!--  <site_footer/> -->
+    <site_footer/>
     <!-- / footer -->
 
   </div>
@@ -15,12 +15,14 @@
 <script>
 import site_header from './components/site_header.vue';
 import site_main from './components/site_main.vue';
+import site_footer from './components/site_footer.vue';
 
 export default {
   name: 'App',
   components: {
       site_header,
-      site_main
+      site_main,
+      site_footer
   }
 }
 </script>
