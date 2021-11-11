@@ -171,12 +171,22 @@
 </script>
 
 <style scoped lang="scss">
+    @import "../assets/css_var/colors.scss";
     footer {
         font-weight: bold;
+        background-image: url("../assets/img/footer-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
 
         .foot_links {
             width: 80%;
             margin: auto;
+            padding: 3rem 0;
+            background-image: url("../assets/img/dc-logo-bg.png");
+            background-size: 500px;
+            background-position: right;
+            background-repeat: no-repeat;
 
             .row {
                 display: flex;
@@ -198,7 +208,12 @@
 
                     a {
                         text-decoration: none;
+                        color: $footer_font_color;
                     }
+                }
+
+                h2 {
+                    color: white;
                 }
 
             }
