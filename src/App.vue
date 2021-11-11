@@ -1,6 +1,14 @@
 <template>
   <div id="app">
-    
+    <site_header/>
+    <!-- /header -->
+
+    <site_main/>
+    <!-- / site main -->
+
+    <site_footer/>
+    <!-- / footer -->
+
   </div>
 </template>
 
