@@ -7,34 +7,34 @@
             <!-- LOGO -->
                 <ul>
                     <li>
-                        CHARACTERS  
+                       <a href="#">CHARACTERS</a>   
                     </li>
                     <li class="active">
-                        COMICS
+                        <a href="#">COMICS</a> 
                     </li>
                     <li>
-                        MOVIES
+                        <a href="#">MOVIES</a> 
                     </li>
                     <li>
-                        TV
+                        <a href="#">TV</a> 
                     </li>
                     <li>
-                        GAMES
+                        <a href="#">GAMES</a> 
                     </li>
                     <li>
-                        COLLECTIBLES
+                        <a href="#">COLLECTIBLES</a> 
                     </li>
                     <li>
-                        VIDEOS
+                        <a href="#">VIDEOS</a> 
                     </li>
                     <li>
-                        FANS
+                        <a href="#">FANS</a> 
                     </li>
                     <li>
-                        NEWS
+                        <a href="#">NEWS</a> 
                     </li>
                     <li>
-                        SHOP
+                        <a href="#">SHOP</a> 
                     </li>
                 </ul>
             <!-- /NAV LINKS -->
@@ -70,19 +70,31 @@ export default {
                 display: flex;
                 list-style-type: none;
                 line-height: calc(80px + 2rem);
-    
-                li {
+
+                li{
+
                     margin-left: 1rem;
 
-                    &:hover {
+                    a {
+                        text-decoration: none;
+                        color: $content_color;
+                        font-weight: bold;
+                        transition: 0.3s;
+                        &:hover {
+                            color: $logo_color;
+                        }
+                    }
+
+                    &.active a {
                         color: $logo_color;
                     }
 
                     &.active {
-                        color: $logo_color;
                         border-bottom: 3px solid $logo_color;
                     }
+
                 }
+        
             }
             
             .logo {

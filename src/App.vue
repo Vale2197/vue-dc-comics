@@ -3,7 +3,7 @@
     <site_header/>
     <!-- /header -->
 
-    <!-- <site_main/> -->
+    <site_main/>
     <!-- / site main -->
 
    <!--  <site_footer/> -->
@@ -14,11 +14,13 @@
 
 <script>
 import site_header from './components/site_header.vue';
+import site_main from './components/site_main.vue';
 
 export default {
   name: 'App',
   components: {
-      site_header
+      site_header,
+      site_main
   }
 }
 </script>
@@ -35,6 +37,6 @@ export default {
 
   #app {
     height: 100vh;
-    background-color: $content_color;
+    background-color: cornflowerblue;
   }
 </style>
