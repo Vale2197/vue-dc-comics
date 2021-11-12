@@ -1,8 +1,10 @@
 <template>
     <main>
         <div class="mainContent">
+            <div class="jumbo">
+            </div>
             <div class="cards">
-                <card v-for="comic in comics" :key="comic.thumb" :image="comic.thumb" :description="comic.series"/>
+                <card v-for="comic in comics" :key="comic.series" :image="comic.thumb" :description="comic.series"/>
             </div>
             <!-- / comics section -->
 
@@ -171,6 +173,14 @@ import card from './card.vue';
             margin: auto;
             color: white;
             font-weight: bold;
+
+            .jumbo {
+                height: 500px;
+                background-image: url("../assets/img/jumbotron.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+            }
 
             .cards {
                 width: 80%;

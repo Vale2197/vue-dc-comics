@@ -40,8 +40,8 @@ export default {
   }
 
   #app {
-    min-width: 1440px;
-    height: 100vh;
+    /* min-width: 1440px;
+    height: 100vh; */
     background-color: $sign_up_sectionColor;
   }
 
