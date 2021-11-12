@@ -20,4 +20,19 @@
 <style lang="scss">
     @import "../assets/css_var/colors.scss";
 
+    .card {
+        width: calc(100% / 6);
+        padding-bottom: 1rem;
+        img {
+             width: 170px;
+             height: 170px;
+             object-fit: cover;
+        }
+
+        p {
+            margin: 0.5rem 0;
+            margin-right: 1rem;
+        }
+    }
+
 </style>

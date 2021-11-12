@@ -4,6 +4,9 @@
             <div class="jumbo">
             </div>
             <div class="cards">
+                <div class="special">
+                    <p>CURRENT SERIES</p>
+                </div>
                 <card v-for="comic in comics" :key="comic.series" :image="comic.thumb" :description="comic.series"/>
             </div>
             <!-- / comics section -->
@@ -185,7 +188,24 @@ import card from './card.vue';
             .cards {
                 width: 80%;
                 margin: auto;
-                padding: 3rem 0;
+                display: flex;
+                flex-wrap: wrap;
+                padding-bottom: 2rem;
+
+                .special {
+                    width: 100%;
+                    p{
+                        height: 3rem;
+                        line-height: 3rem;
+                        font-size: 1.5rem;
+                        width: 16rem;
+                        text-align: center;
+                        margin-top: -1.5rem;
+                        background-color: $shop_nav_color;
+                        margin-bottom: 2rem;
+                    } 
+                }
+
             }
 
             .shop-sections {
