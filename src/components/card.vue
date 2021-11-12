@@ -27,6 +27,7 @@
              width: 170px;
              height: 170px;
              object-fit: cover;
+             object-position: top;
         }
 
         p {
