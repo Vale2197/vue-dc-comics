@@ -8,6 +8,12 @@
                     <p>CURRENT SERIES</p>
                 </div>
                 <card v-for="comic in comics" :key="comic.series" :image="comic.thumb" :description="comic.series"/>
+
+                <div class="loadMore">
+                    <p>
+                        LOAD MORE
+                    </p> 
+                </div>
             </div>
             <!-- / comics section -->
 
@@ -204,6 +210,18 @@ import card from './card.vue';
                         background-color: $shop_nav_color;
                         margin-bottom: 2rem;
                     } 
+                }
+
+                .loadMore {
+                    width: 100%;
+                    text-align: center;
+
+                    p {
+                        background-color: $shop_nav_color;
+                        width: 12rem;
+                        margin: auto;
+                        padding: 0.5rem 0;
+                    }
                 }
 
             }
