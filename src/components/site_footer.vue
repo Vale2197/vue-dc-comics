@@ -194,7 +194,7 @@
     }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
     @import "../assets/css_var/colors.scss";
     footer {
         font-weight: bold;
